@@ -1,0 +1,8 @@
+model.py:21:0: C0301: Line too long (116/100) (line-too-long)
+model.py:69:0: C0305: Trailing newlines (trailing-newlines)
+model.py:12:4: R0913: Too many arguments (6/5) (too-many-arguments)
+model.py:12:4: R0917: Too many positional arguments (6/5) (too-many-positional-arguments)
+model.py:9:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 8.94/10 (previous run: 8.91/10, +0.02)

@@ -1,0 +1,6 @@
+************* Module view
+view.py:11:0: R0902: Too many instance attributes (8/7) (too-many-instance-attributes)
+view.py:93:11: W0718: Catching too general exception Exception (broad-exception-caught)
+
+------------------------------------------------------------------
+Your code has been rated at 9.70/10 (previous run: 9.55/10, +0.15)
