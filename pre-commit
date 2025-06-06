@@ -1,0 +1,25 @@
+@echo off
+setlocal enabledelayedexpansion
+
+set EXITCODE=0
+
+REM Список файлов для проверки
+set FILES=model.py view.py test_model.py
+
+for %%F in (%FILES%) do (
+    echo Проверяем %%F...
+    pylint %%F > nul
+    set RESULT=!ERRORLEVEL!
+    pylint-exit !RESULT!
+    if !ERRORLEVEL! EQU 1 (
+        set EXITCODE=1
+    )
+)
+
+if %EXITCODE% EQU 1 (
+    echo.
+    echo Pylint обнаружил ошибки. Коммит запрещён.
+    exit /b 1
+)
+
+exit /b 0
